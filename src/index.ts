@@ -8,10 +8,10 @@ function axios(config: AxiosRequestConfig): void {
 }
 
 function processConfig(config: AxiosRequestConfig): void {
-  config.url = transformUrl(config)
+  config.url = transformURL(config)
 }
 
-function transformUrl(config: AxiosRequestConfig): string {
+function transformURL(config: AxiosRequestConfig): string {
   const { url, params } = config
   return buildURL(url, params)
 }
