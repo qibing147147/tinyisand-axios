@@ -11,7 +11,7 @@ function encode(val: string): string {
     .replace(/%5D/gi, ']')
 }
 
-export function buildURL(url: string, params?: any) {
+export function buildURL(url: string, params?: any): string {
   if (!params) {
     return url
   }
@@ -19,7 +19,7 @@ export function buildURL(url: string, params?: any) {
   const parts: string[] = []
 
   Object.keys(params).forEach(key => {
-    let val = params[key]
+    const val = params[key]
     if (val === null || typeof val === 'undefined') {
       return
     }
