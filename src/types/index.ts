@@ -43,7 +43,7 @@ export interface AxiosError extends Error {
   isAxiosError: boolean
 }
 
-export interface AxiosClass {
+export interface Axios {
   request(config: AxiosRequestConfig): AxiosPromise
 
   get(url: string, config?: AxiosRequestConfig): AxiosPromise
@@ -61,6 +61,6 @@ export interface AxiosClass {
   patch(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise
 }
 
-export interface AxiosInstance extends AxiosClass {
+export interface AxiosInstance extends Axios {
   (config: AxiosRequestConfig): AxiosPromise
 }
