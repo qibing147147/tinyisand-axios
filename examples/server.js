@@ -41,7 +41,6 @@ module.exports = app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}, Ctrl+C to stop`)
 })
 
-
 function registerSimpleRouter () {
   router.get('/simple/get', function(req, res) {
     res.json({
