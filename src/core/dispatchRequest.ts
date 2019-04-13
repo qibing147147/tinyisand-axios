@@ -26,7 +26,7 @@ function transformRequestData(config: AxiosRequestConfig): any {
   return transformRequest(config.data)
 }
 
-function transformHeaders(config: AxiosRequestConfig) {
+function transformHeaders(config: AxiosRequestConfig): any {
   const { headers = {}, data } = config
   return processHeaders(headers, data)
 }
