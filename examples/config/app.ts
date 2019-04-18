@@ -2,6 +2,7 @@ import axios from '../../src/index'
 import qs from 'qs'
 
 axios.defaults.headers.common['test2'] = 123
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8'
 
 axios({
   url: '/config/post',
