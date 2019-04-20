@@ -48,16 +48,16 @@ export default function mergeConfig(
   const config = Object.create(null)
 
   for (let key in config2) {
-    mergeFiled(key)
+    mergeField(key)
   }
 
   for (let key in config1) {
     if (!config2[key]) {
-      mergeFiled(key)
+      mergeField(key)
     }
   }
 
-  function mergeFiled(key: string): void {
+  function mergeField(key: string): void {
     const strat = strats[key] || defaultStrat
     config[key] = strat(config1[key], config2![key])
   }
