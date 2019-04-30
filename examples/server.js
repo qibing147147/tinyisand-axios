@@ -21,7 +21,11 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler))
 
-app.use(express.static(__dirname))
+app.use(express.static(__dirname, {
+  setHeaders (res) {
+    res.cookie('XSRF-TOKEN', '1234abc')
+  }
+}))
 
 app.use(bodyParser.json())
 // app.use(bodyParser.text())
