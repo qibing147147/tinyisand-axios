@@ -30,7 +30,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
     }
 
     if (withCredentials) {
-      request.withCredentials = true
+      request.withCredentials = withCredentials
     }
 
     request.open(method.toUpperCase(), url!, true)
