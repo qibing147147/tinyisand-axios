@@ -12,9 +12,11 @@ import axios from '../../src/index'
 //   console.log(res)
 // })
 
-axios.get('/more/get',{
-  xsrfCookieName: 'XSRF-TOKEN', // default
-  xsrfHeaderName: 'X-XSRF-TOKEN' // default
-}).then(res => {
+const instance = axios.create({
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN'
+})
+
+instance.get('/more/get').then(res => {
   console.log(res)
 })
