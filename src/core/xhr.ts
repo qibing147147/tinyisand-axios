@@ -100,8 +100,8 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
 
       if ((withCredentials || isURLSameOrigin(url!)) && xsrfCookieName) {
         const xsrfValue = cookie.read(xsrfCookieName)
-        if (xsrfValue) {
-          headers[xsrfHeaderName!] = xsrfValue
+        if (xsrfValue && xsrfHeaderName) {
+          headers[xsrfHeaderName] = xsrfValue
         }
       }
 

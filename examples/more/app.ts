@@ -17,8 +17,8 @@ import NProgress from 'nprogress'
 // })
 
 // const instance = axios.create({
-//   xsrfCookieName: 'XSRF-TOKEN',
-//   xsrfHeaderName: 'X-XSRF-TOKEN'
+//   xsrfCookieName: 'XSRF-TOKEN-D',
+//   xsrfHeaderName: 'X-XSRF-TOKEN-D'
 // })
 //
 // instance.get('/more/get').then(res => {

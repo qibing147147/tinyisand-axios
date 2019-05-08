@@ -25,7 +25,7 @@ app.use(webpackHotMiddleware(compiler))
 
 app.use(express.static(__dirname, {
   setHeaders (res) {
-    res.cookie('XSRF-TOKEN', '1234abc')
+    res.cookie('XSRF-TOKEN-D', '1234abc')
   }
 }))
 
