@@ -193,4 +193,8 @@ function registerMoreRouter () {
     console.log(req.body, req.files)
     res.end('upload success!')
   })
+
+  router.post('/more/post', function(req, res) {
+    res.json(req.headers.authorization)
+  })
 }
