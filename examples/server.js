@@ -203,6 +203,7 @@ function registerMoreRouter () {
     if (type === 'Basic' && username === 'Yee' && password === '123456') {
       res.json(req.body)
     } else {
+      res.status(401)
       res.end('UnAuthorization')
     }
   })
