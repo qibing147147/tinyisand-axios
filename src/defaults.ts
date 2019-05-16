@@ -31,7 +31,7 @@ const defaults: AxiosRequestConfig = {
   ],
 
   validateStatus(status: number): boolean {
-    return status >= 200 && status <= 300
+    return status >= 200 && status < 300
   }
 }
 
