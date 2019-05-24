@@ -151,6 +151,10 @@ describe('requests', () => {
     let response: AxiosResponse
 
     axios('/api/account/signup', {
+      auth: {
+        username: '',
+        password: ''
+      },
       method: 'post',
       headers: {
         Accept: 'application/json'
@@ -163,11 +167,11 @@ describe('requests', () => {
       request.respondWith({
         status: 200,
         statusText: 'OK',
-        responseText: '{"a": 1}'
+        responseText: '{"errno": 0}'
       })
 
       setTimeout(() => {
-        expect(response.data).toEqual({ a: 1 })
+        expect(response.data).toEqual({ errno: 0 })
         done()
       }, 100)
     })
