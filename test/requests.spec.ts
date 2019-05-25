@@ -10,7 +10,7 @@ describe('requests', () => {
     jasmine.Ajax.uninstall()
   })
 
-  test('should treat single string arg as url, and config arg', () => {
+  test('should treat single string arg as url', () => {
     axios('/foo')
 
     return getAjaxRequest().then(request => {
