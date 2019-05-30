@@ -25,7 +25,7 @@ describe('progress', () => {
   })
 
   test('should add a upload progress handler', () => {
-    const progressSpy = jasmine.createSpy('progress')
+    const progressSpy = jest.fn()
 
     axios('/foo', { onUploadProgress: progressSpy })
 
