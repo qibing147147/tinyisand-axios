@@ -1,6 +1,6 @@
 {
-  "name": "ts-axios-new",
-  "version": "0.1.5",
+  "name": "ts-axios-tinyisland",
+  "version": "0.1.6",
   "description": "",
   "keywords": [],
   "main": "dist/axios.umd.js",
@@ -9,10 +9,10 @@
   "files": [
     "dist"
   ],
-  "author": "ustbhuangyi <280309453@qq.com>",
+  "author": "tinyisland <qibing147147@163.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ustbhuangyi/ts-axios"
+    "url": "https://github.com/qibing147147/tinyisand-axios.git"
   },
   "license": "MIT",
   "engines": {
