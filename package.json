@@ -1,6 +1,6 @@
 {
-  "name": "ts-axios-tinyisland",
-  "version": "0.1.6",
+  "name": "tinyisland-axios",
+  "version": "0.1.1",
   "description": "",
   "keywords": [],
   "main": "dist/axios.umd.js",
